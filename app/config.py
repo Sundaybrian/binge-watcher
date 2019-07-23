@@ -4,7 +4,8 @@ class Config:
     '''
     General configuration parent class
     '''
-    pass
+    MOVIE_BASE_URL='https://api.themoviedb.org/3/mov/ie/{}?api_key={}'
+    
 
 class ProdConfig(Config):
     '''
