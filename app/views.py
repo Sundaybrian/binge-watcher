@@ -15,11 +15,16 @@ def index():
 
     popular_movies = get_movies('popular')
     print(popular_movies)
+    upcoming_movies=get_movies('upcoming')
+    now_showing_movie=get_movies('now_playing')
 
 
     title = 'Home - Welcome to The best Movie Review Website Online'
     message="Helo there"
-    return render_template('index.html',popular=popular_movies,title=title)
+    return render_template('index.html',popular=popular_movies,
+    upcoming=upcoming_movie,
+    now_showing=now_showing_movie
+    title=title)
 
 
 @app.route('/movie/<int:movie_id>')
