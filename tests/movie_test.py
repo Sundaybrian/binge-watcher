@@ -1,6 +1,6 @@
 import unittest
-from models import movie #from models folder import the movie.py
-Movie = movie.Movie #set a local variable equal to the Movie class from the movie.py file
+from app.models import Movie 
+
 
 class MovieTest(unittest.TestCase):
     '''
@@ -19,4 +19,4 @@ class MovieTest(unittest.TestCase):
 
 
 if __name__=='__main__':
-    unittest.main()        
+         
